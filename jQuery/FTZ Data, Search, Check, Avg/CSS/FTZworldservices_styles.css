@@ -1,0 +1,77 @@
+section{
+	width: 37%;
+	padding-left: 0px;
+	vertical-align: top;
+}
+
+main{
+	font-size: 18px;
+}
+
+.text-content{
+	width: 62%;
+}
+
+div.sections{
+	border: 1px solid #5a5858;
+}
+
+div.left-pad{
+	margin: 25px;
+}
+
+.left-pad img{
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.left-pad ul{
+	float: none;
+	list-style-type: none;
+	padding: 8px 0px;
+	border-top: 1px solid #5a5858;
+	border-bottom: 1px solid #5a5858;
+}
+
+div.right-pad{
+	margin: 20px 25px 25px 0px;
+}
+
+a, h2{
+	color: rgb(200, 225, 252);
+}
+
+h2{
+	letter-spacing: 1.5px;
+}
+
+.right-pad ul{
+	float: none;
+	padding: 8px;
+	margin-left: 25px;
+	color: rgb(255, 255, 255);	
+}
+
+div.support{
+	background-color: rgb(33, 57, 82);
+	padding: 15px;
+	padding-left: 30px;
+	border-top: 1px solid #5a5858;
+	border-bottom: 1px solid #5a5858;
+}
+
+#SupportReq{
+	background-color: rgb(43, 104, 140);
+	border-radius: 5px;
+	display: inline-block;
+	margin-top: 10px;
+	padding: 2px;
+}
+
+.support a{
+    background-color: rgb(43, 104, 140);
+    border-radius: 5px;
+    padding: 2px;
+	text-decoration: none;
+}
+	

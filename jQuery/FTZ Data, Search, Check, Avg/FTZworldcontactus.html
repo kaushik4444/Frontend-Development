@@ -1,0 +1,66 @@
+<!<!DOCTYPE html5>
+<html>
+ <head>
+  <title>CONTACT US PAGE</title>
+  <link rel="stylesheet" href="CSS/FTZworldhome_styles.css">
+  <link rel="stylesheet" href="CSS/FTZworldservices_styles.css">
+  <link rel="stylesheet" href="CSS/FTZworldContactUs_styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./Scripts/contactus.js"></script>
+ </head>
+ <body>
+  <div class="container">
+   <div class="top-link">
+    <ul>
+     <li><a href="#requestaquote">Request a Quote</a></li>
+     <li><a href="#clientlogin">Client Login</a></li>
+     <li><a href="#vehicleexportportal">Vehicle Export Portal</a></li> 
+    </ul>
+   </div>
+   <div class="clearfix"></div>
+   <div class="navbox">
+    <img src="./Images/logo.png" alt="Logo">
+    <div class="navigation">
+    <div class="doubleborder">
+    <ul>
+     <li><a href="./FTZworldhome.html">HOME</a></li> 
+     <li><a href="#aboutftzws">ABOUT FTZWS</a></li>
+     <li><a href="./FTZworldservices.html">OUR SERVICES</a></li>
+     <li><a href="#ourclients">OUR CLIENTS</a></li>
+     <li><a href="./FTZworldcontactus.html">CONTACT US</a></li>
+     </div>
+    </ul>
+    </div>
+   </div>
+   <header>
+   </header>
+   <main>
+    <div class="sections">
+        <input id= "search" type="text" placeholder="search" name="Search">
+     <div class="table">
+     <table id="tableID" style="width:100%">
+        <thead>
+        <tr>
+            <th id="check"><input id = "selectall" type="checkbox" name="select" value="all"></th>
+            <th id="name">NAME</th>
+            <th id="score">SCORE</th> 
+            <th id="email">EMAIL</th>
+            <th id="reason"></th>
+        </tr>
+        </thead>
+        <tbody id= "myTable">
+
+        </tbody>
+    </table>
+    </div>
+    <button class= "button" type="button">Calculate</button>
+    <span>Average:<p id= "average"></p></span>
+    <span>Max:<p id= "max"></p></span>
+    </div>
+   </main>
+   <footer>
+    <p>Copyright 2010 FTZ World Services. All rights reserved.<a href="./FTZworldcontactus.html"><k>Contact Us</k></a><a href="#requestaquote"><k>Request a Quote</k></a></p>
+   </footer>
+  </div>
+ </body>
+</html>

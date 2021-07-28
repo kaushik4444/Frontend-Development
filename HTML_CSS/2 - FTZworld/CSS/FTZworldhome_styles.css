@@ -1,0 +1,165 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-image: url("../Images/bg.jpg");
+	font-family: Calibri;
+	background-size: cover;
+}
+
+div.container{
+	margin: auto;
+	width: 1050px;
+}
+
+ul{
+	float: right;
+}
+
+.top-link ul{
+	background-color: rgb(59, 93, 139);	
+	padding: 3px 8px;
+}
+
+.top-link li{
+	display: inline-block;
+}
+
+.top-link li + li:before{
+    content: " | ";
+	color: rgb(171, 225, 253);
+}
+
+.top-link a{
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+}
+
+div.clearfix{
+	clear:right;
+}
+
+.navbox img{
+	position: absolute;
+	padding: 0px 20px;
+	z-index: 1;
+}
+
+div.navigation{
+	margin-top: 35px;
+	float: right;
+	width: 100%;
+	background-color: rgba(28, 46, 64, 0.93);
+}
+
+div.doubleborder{
+	float: right;
+    border: 0.5px solid #5a5858;
+    width: 98.8%;
+    margin: 0.5%;
+}
+
+.navigation ul{
+	max-width: 70%;
+}
+.navigation li{
+	display: inline-block;
+	padding: 12px 0px;
+}
+
+.navigation li + li:before{
+    content: " | ";
+	color: rgb(255, 255, 255);
+}
+
+.navigation a{
+	display: inline-block;
+    padding: 6px 18px;
+	text-decoration: none;
+	color: rgb(171, 225, 253);
+	font-family: Century Gothic;	
+}
+
+.navigation a:hover{
+	background-color: rgb(73, 103, 129);
+	color: white;
+	border-radius: 5px;
+}
+
+header{
+	color: rgb(255, 255, 255);
+	clear: right;
+	padding: 35px 0px;
+	background-color: #27272763;
+}
+
+header h1{
+	letter-spacing: 8px;
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-size: 45px;
+    padding-left: 3%;
+}
+
+main{
+	background-color: rgba(28, 46, 64, 0.93);
+	padding: 3px;
+}
+
+div.sections{
+	padding: 22px;
+	border: 0.5px solid #5a5858;
+}
+
+section{
+	vertical-align: top;
+	display: inline-block;
+	width: 31%;
+	padding-left: 3%;
+}
+
+#FirstChild{
+	padding-left: 0px;
+	filter: brightness(180%);
+}
+
+section img{
+	width: 100%;
+}
+
+section a{
+	color: rgb(171, 225, 253);
+}
+
+p{
+	color: rgb(255, 255, 255);
+}
+
+footer{
+    padding: 4px 0px;
+    margin-top: 4px;
+    background-color: rgb(59, 93, 139);
+}
+
+footer p{
+	text-align: center;
+	color: rgb(202, 210, 229);
+}
+
+footer a{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+footer a + a:before{
+    content: " | ";
+	color: rgb(202, 210, 229);
+}
+
+footer span{
+	padding: 0px 5px;
+	text-decoration: underline;
+}

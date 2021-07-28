@@ -1,0 +1,53 @@
+main p{
+	padding-top: 15px;
+	max-width:80%;
+}
+
+.form-container{
+    padding: 20px 0px 30px 45px;
+	font-family: Segoe UI;
+}
+
+.form-container p{
+	padding: 15px 0px;
+}
+
+#myForm{
+	padding: 20px 15px;
+}
+
+#info{
+	padding: 0px;
+}
+
+h3{
+	padding: 0px;
+	padding-top: 10px;
+}
+
+.row{
+	margin-top: 18px;
+}
+
+.lable {
+    display: inline-block;
+    width: 15%;
+}
+
+.box {
+    display: inline-block;
+}
+
+.button{
+	font-weight: bold;
+	padding: 3px 8px;
+}
+
+#radio{
+    vertical-align: middle;
+}
+
+.reqError{
+	color: #ff0000; /*Red Color*/
+	font-weight: bold;
+}

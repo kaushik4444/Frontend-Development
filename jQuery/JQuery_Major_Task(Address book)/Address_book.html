@@ -1,0 +1,112 @@
+<!DOCTYPE html5>
+<html>
+<head>
+	<title>Address_book</title>
+	<link rel="stylesheet" href="./CSS/Home_styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="./Scripts/addressbook.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<h1>Address Book</h1>
+		</header>
+		<div class="navigation">
+			<ul>
+				<li><a href="./Address_book.html">HOME</a></li>
+				<li><a id="add">+ADD</a></li>
+			</ul>
+			<img src="./Images/blog-icon.png" alt="RSS FEED">
+		</div>
+		<main>
+
+			<div class="contacts-table">
+				<h3>CONTACTS</h3>
+				<div class="table">
+					<ul id="tableUL">
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="display-table">
+
+				<div id="myModal" class="modal">
+
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<form id="myForm">
+							<span id="reqWarn" class="reqError"></span>
+							<div class="row">
+								<div class="lable">
+									<label for="contactName">Name</label>
+									<span id="reqNameTxt" class="reqError"></span>
+								</div>
+								<div class="box">
+									<input id="name" type="text" name="contactName">
+								</div>
+							</div>
+							<div class="row">
+								<div class="lable">
+									<label for="contactEmail">Email</label>
+									<span id="reqEmailTxt" class="reqError"></span>
+								</div>
+								<div class="box">
+									<input id="email" type="text" name="contactEmail">
+								</div>
+							</div>
+							<div class="row" id="mobileLandline">
+								<div class="lable">
+									<label for="contactMobile">Mobile</label>
+									<span id="reqMobileTxt" class="reqError"></span>
+								</div>
+								<div class="box">
+									<input id="mobile" type="text" name="contactMobile">
+								</div>
+							</div>
+							<div class="row" id="mobileLandline">
+								<div class="lable">
+									<label for="contactLandline">Landline</label>
+								</div>
+								<div class="box">
+									<input id="landline" type="text" name="contactLandline">
+								</div>
+							</div>
+							<div class="row">
+								<div class="lable">
+									<label for="contactWebsite">Website</label>
+								</div>
+								<div class="box">
+									<input id="website" type="text" width="80%" name="contactWebsite">
+								</div>
+							</div>
+							<div class="row">
+								<div class="lable">
+									<label for="contactAddress">Address</label>
+								</div>
+								<div class="box">
+									<textarea id="address" type="text" name="contactAddress"></textarea>
+								</div>
+							</div>
+							<div class="row" id="formButton">
+								<input class="formAdd" type="button" value="Add">
+							</div>
+							<div class="row" id="formButton">
+								<input class="formUpdate" type="button" value="Update">
+							</div>
+							<div id="clear"></div>
+						</form>
+					</div>
+				</div>
+				<div id="contactDetails">
+					<div id="detailsText"></div>
+					<div class="edit"><img src="./Images/edit1.jpg">EDIT</div>
+					<div class="delete"><img src="./Images/delete1.png">DELETE</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>

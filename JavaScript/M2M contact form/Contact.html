@@ -1,0 +1,135 @@
+<!DOCTYPE html5>
+<html>
+ <head>
+  <title>MAN2MACHINE CONTACT PAGE</title>
+  <link rel="stylesheet" href="./CSS/home_styles.css">
+  <link rel="stylesheet" href="./CSS/Careers_styles.css">
+  <script src="./Scripts/Contact.js"></script>
+ </head>
+ <body>
+  <div class= "container">
+   <header>
+    <h1>MAN2MACHINE</h1>
+   </header>
+   <div class= "navigation">
+    <ul>
+     <li><a href="./Home.html">HOME</a></li>
+     <li><a href="#services">SERVICES</a></li>
+     <li><a href="./Careers.html">CAREERS</a></li>
+     <li><a href="./Contact.html">CONTACT</a></li>
+    </ul>
+    <img src="./Images/blog-icon.png" alt="RSS FEED">
+   </div>
+   <div class= "form-container">
+	<form id="myForm" onsubmit="return checkReqFields()" action="./Careers_code.html">
+		<span id="reqWarn" class="reqError"></span>
+		<div class="row">
+		 <div class="lable">
+		  <label for="myname">My Name:</label>
+		 </div>
+		 <div class="box">
+		  <input id= "reqName" type="text" name="myname">
+		  <span id="reqNameTxt" class="reqError"></span>
+		 </div>
+		</div>
+		<div class="row">
+		 <div class="lable">
+		  <label for="myemailaddress">My Email Address:</label>
+		 </div>
+		 <div class="box">
+		  <input id= "reqEmail" type="text" name="myemailaddress">
+		  <span id="reqEmailTxt" class="reqError"></span>
+		 </div>
+		</div>
+		<div class="row">
+		 <div class="lable">
+		  <label for="gender">Select your Gender:</label>
+		 </div>
+		 <div class="box" id="radio">
+			<input type="radio" onclick="maleAlert()" name="gender" value="male" checked> Male<br>
+			<input type="radio" onclick="femaleAlert()" name="gender" value="female"> Female<br>
+		 </div>
+		</div>
+		<div class="row">
+		 <div class="lable">
+		  <label for="tele">My Telephone Number:</label>
+		 </div>
+		 <div class="box">
+		  <input type="text" name="tele">
+		 </div>
+		</div>
+		<div class="row">
+		 <div class="lable">
+		  <label for="orgname">My Organization Name:</label>
+		 </div>
+		 <div class="box">
+		  <input id= "reqOrgName" type="text" name="orgname">
+		  <span id="reqOrgNameTxt" class="reqError"></span>
+		 </div>
+		</div>
+		<!-- <input type="file" name="myFile" value="Browse.."><br> -->
+		<div class="row">
+		 <div class="lable">
+		  <label for="city">My City:</label>
+		 </div>
+		 <div class="box">
+		 <input type="text" name="city">
+		 </div>
+		</div>
+		<div class="row">
+		 <div class="lable">
+		  <label for="state">My State or Province:</label>
+		 </div>
+		 <div class="box">
+		 <select id="selectState" name="state" onchange="setPromo()">
+			<option value="def" selected disabled>Select State or Province</option>
+			<option value="Delhi">Delhi</option>
+			<option value="Punjab">Punjab</option>
+			<option value="Haryana">Haryana</option>
+			<option value="Tamilnadu">Tamilnadu</option>
+		 </select>
+		 </div>
+		</div>
+		<div class="row">
+		 <div class="lable">
+		  <label for="contact">Please Contact Me by:</label>
+		 </div>
+		 <div class="box" id="radio">
+			<input type="radio" name="contact" value="email" checked> Email<br>
+			<input type="radio" name="contact" value="phone"> Phone<br>
+			<input type="radio" name="contact" value="both"> Both
+		 </div>
+		</div>
+		<div class="row">
+		 <div class="lable">
+		  <label for="promotioncode">Promotion Code:</label>
+		 </div>
+		 <div class="box">
+		 <input id="promocode" type="text" name="promotioncode" disabled>
+		 </div>
+		</div>
+		<h3>Optional Information</h3>
+		<p id="info">This information is optional but it help us to serve you better.</p>
+		<div class="row">
+		 <div class="lable">
+		  <label for="webaddress">My Website Address is:</label>
+		 </div>
+		 <div class="box">
+		 <input type="text" name="webaddress">
+		 </div>
+		</div>
+		<p>Tell Us More About Your Organization:</p>
+		<textarea name="message" style="width:500px; height:150px"></textarea>
+		<p>What I'd really like to know is:</p>
+		<textarea name="message" style="width:500px; height:150px"></textarea>
+		<div class="row">
+ 		 <div class="buttons">
+		 <input class="button" type="submit" value="Send Message">
+		 <input class="button" type="button" onclick="resetFunction()" value="Clear Form">
+		 </div>
+		</div>
+	</form>
+   </div>
+  </div>
+ </body>
+</html>
